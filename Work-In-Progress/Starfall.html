@@ -117,7 +117,7 @@ font-size: 150%;
 
 .title {
 font-size: 500%;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="dead" color="red"></tw-tag>,<tw-tag name="flashback" color="purple"></tw-tag>,<tw-tag name="red" color="red"></tw-tag><tw-passagedata pid="1" name="lying on the ground" tags="flashback" position="417,186" size="100,100">You open your eyes, the sky is blood red, you see a pure white block docked at the mast of the Empire State Building and the sound of metal clashing in your ears. You find yourself lying on the ground, your hands covered in brain matter and body tissue from different sources mixed together. You feel a splitting headache and a buzzing in your ears.
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="dead" color="red"></tw-tag>,<tw-tag name="flashback" color="purple"></tw-tag>,<tw-tag name="red" color="red"></tw-tag><tw-passagedata pid="1" name="lying on the ground" tags="flashback" position="418,187" size="100,100">You open your eyes, the sky is blood red, and the sound of metal clashing in your ears. You find yourself lying on the ground, your hands covered in brain matter and body tissue from different sources mixed together. You feel a splitting headache and a buzzing in your ears.
 
 &quot;Get up!&quot;
 A police officer shouts at you.
@@ -130,11 +130,12 @@ A police officer shouts at you.
 &lt;/audio&gt;
 
 &lt;&lt;if $name is &quot;&quot;&gt;&gt;&lt;&lt;set $name to &quot;Nameless&quot;&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="overly realistic dream" tags="dead" position="600,193" size="100,100">&lt;audio src=&quot;https://github.com/thedavidweng/Interactive-Fiction-Starfall/blob/main/assets/audio/effects/GORE%20-%20WEAP%20-%20Sword_Stab_In_Out_Gore_2.wav?raw=true&quot; autoplay&gt;
-&lt;p&gt;If you are reading this, it is because your browser does not support the audio element.&lt;/p&gt;
-&lt;/audio&gt;
+&lt;&lt;/if&gt;&gt;
 
-&quot;Sqwelp!&quot;
+&lt;&lt;set $moral to 0&gt;&gt;
+&lt;&lt;set $moral to 0&gt;&gt;
+&lt;&lt;set $BrotherSatisfaction to 0&gt;&gt;
+&lt;&lt;set $RhinoSatisfaction to 0&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="overly realistic dream" tags="flashback" position="600,193" size="100,100">&quot;Sqwelp!&quot;
 A sharp claw. thrust into that police officer&#39;s chest.
 A human-shaped figure covered with beastly limbs slowly draws his claw from the police officer&#39;s chest. Blood and mud on his face obscures his expression, but you feel him grinning ferociously. The police officer fade into unconsciousness while hands dropping weakly.
 
@@ -146,7 +147,11 @@ A national Guard with a grenade launcher in his hand rushes out of the street co
 
 The shockwave of the explosion sends you flying.
 
-[[fade into unconsciousness|wake up]]</tw-passagedata><tw-passagedata pid="3" name="wake up" tags="" position="785,199" size="100,100">You suddenly open your eyes and only see the ceiling.
+[[fade into unconsciousness|wake up]]
+
+&lt;audio src=&quot;https://github.com/thedavidweng/Interactive-Fiction-Starfall/blob/main/assets/audio/effects/GORE%20-%20WEAP%20-%20Sword_Stab_In_Out_Gore_2.wav?raw=true&quot; autoplay&gt;
+&lt;p&gt;If you are reading this, it is because your browser does not support the audio element.&lt;/p&gt;
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="3" name="wake up" tags="" position="785,199" size="100,100">You suddenly open your eyes and only see the ceiling.
 &quot;Again?&quot;
 The voice comes from your right. A middle-aged man with a melancholy face, sitting beside you looking at you with concern, his hand is placed on your shoulder.
 You find your back is soaking wet. You take a deep breath and says,
@@ -171,13 +176,13 @@ You start the conversation.
 &quot;Well, tell me about history again and see if it can help&quot;
 &quot;Sure, whatever you want to hear.&quot;
 
-[[I want to hear Friendship Program and Arrival day|friendship program and arrival day]]
+[[I want to hear about Friendship Program and Arrival day|friendship program and arrival day]]
 [[Maybe Regime and Starfall|regime and starfall]]
-[[Let&#39;s start with how I lost my memory.|lost memory]]</tw-passagedata><tw-passagedata pid="5" name="argue with him" tags="" position="949,29" size="100,100">&quot;This time was different, brother! This time the feeling was particularly strong, I could even recall the texture of the ground.&quot;
+[[Let&#39;s start with how I lost my memory.|lost memory]]</tw-passagedata><tw-passagedata pid="5" name="argue with him" tags="" position="952,43" size="100,100">&quot;This time was different, brother! This time the feeling was particularly strong, I could even recall the texture of the ground.&quot;
 You says firmly.
 &quot;Maybe your memory&#39;s starting to come back. That&#39;s a good thing.&quot; He think about it and says. You can&#39;t deny it, so you shrug your shoulders.
 
-[[agree with him|nod your head]]</tw-passagedata><tw-passagedata pid="6" name="instructions-en" tags="" position="283,189" size="100,100">This is an interactive novel by David Weng. Every choice you make could affect the ending.
+[[agree with him|nod your head]]</tw-passagedata><tw-passagedata pid="6" name="instructions-en" tags="" position="283,188" size="100,100">This is an interactive novel by David Weng. Every choice you make could affect the ending.
 
 Please note that if you play the game online, the game will play sound effects during the game.
 
@@ -194,9 +199,7 @@ Before we begin, please tell me what you want to be called.
 
 When you’re ready, you can
 
-[[START YOUR JOURNEY|lying on the ground]]
-
-&lt;&lt;set $moral to 0&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="truth" tags="" position="377,460" size="100,100">我已经全部知道了
+[[START YOUR JOURNEY|lying on the ground]]</tw-passagedata><tw-passagedata pid="7" name="truth" tags="" position="377,460" size="100,100">我已经全部知道了
 你知道什么了？
 你到底是谁，我的“哥哥”
 
@@ -234,12 +237,12 @@ $name，我没有告诉任何人你的存在，三年来，我一直把你当作
 &lt;&lt;if $moral gte 3&gt;&gt;[[我同意，星掠者都该死|摧毁 Evolved]].
 &lt;&lt;else&gt;&gt;[[我拒绝，你们都该死|杀死所有人]].
 &lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="8" name="kill all" tags="" position="532,472" size="100,100">They were all dead. 
+</tw-passagedata><tw-passagedata pid="8" name="kill all" tags="" position="530,741" size="100,100">They were all dead. 
 The final gunshot was an exclamation mark on everything that had led to this point. 
 
 I released my finger from the trigger, and it was over.
 
-... Or is it?</tw-passagedata><tw-passagedata pid="9" name="instructions-cn" tags="" position="128,2" size="100,100">这是一部由 David Weng 创作的互动小说。你的每一个选择都可能影响结局。
+... Or is it?</tw-passagedata><tw-passagedata pid="9" name="instructions-cn" tags="" position="128,29" size="100,100">这是一部由 David Weng 创作的互动小说。你的每一个选择都可能影响结局。
 
 请注意，如果游玩时连接上网络，游戏过程中会播放音效。
 
@@ -255,37 +258,416 @@ I released my finger from the trigger, and it was over.
 
 准备好后，你可以
 
-[[开始你的旅程|lying on the ground]]
-
-&lt;&lt;set $side to 0&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="language selection" tags="" position="127,187" size="100,100">Language Selection
+[[开始你的旅程|lying on the ground]]</tw-passagedata><tw-passagedata pid="10" name="language selection" tags="" position="127,187" size="100,100">Language Selection
 语言选择
 
 [[English|instructions-en]]
-[[简体中文|instructions-cn]]</tw-passagedata><tw-passagedata pid="11" name="接管 Evolved" tags="" position="262,622" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="12" name="摧毁 Evolved" tags="" position="412,728" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="13" name="杀死所有人" tags="" position="562,622" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="14" name="friendship program and arrival day" tags="" position="1088,344" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="15" name="regime and starfall" tags="" position="840,347" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="16" name="lost memory" tags="" position="967,347" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="17" name="未命名片段" tags="" position="789,607" size="100,100">&lt;&lt;set $moral to $moral - 1&gt;&gt;
-你没有动，毕竟和星掠者正面冲突等同于自杀。
-女人的脑袋被轻松捏碎，犀牛人松开手，在附近寻找着其他幸存者。你低下头祈祷他能离开
-原来藏在这
-犀牛人一边说道，一边绕到你面前，看来是想用杀死那个女人的方法故技重施。
+[[简体中文|instructions-cn]]</tw-passagedata><tw-passagedata pid="11" name="接管 Evolved" tags="" position="261,621" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="12" name="摧毁 Evolved" tags="" position="392,623" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="13" name="杀死所有人" tags="" position="529,624" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="14" name="friendship program and arrival day" tags="" position="1161,353" size="100,100">&lt;&lt;if $FPandAD is true&gt;&gt;&quot;You really seem to like this story, $name.&quot;
+&lt;&lt;/if&gt;&gt;
+&quot;In 2024, Our species successfully completed the deployment of near-orbit satellites. With the efforts of all countries, Human begins broadcast greetings recorded in Arabic, Chinese, English, French, Russian and Spanish towards the galaxy. Historically known as the 「Friendship Program」.&quot;
 
-你看准时机，把手指从他全身上下唯一没被装甲保护的眼睛处开口插进去
-意想不到的事情发生了，一阵强光闪起，你进入了另一个世界。
+&quot;An alien civilization, the Confederacy, received the greetings and sent the 「Messenger」 to respond to the humans.&quot;
 
+&quot;On October 12, 2024, The 「Messenger」 arrived at the United Nations headquarters building in Manhattan, New York City. But the Messenger&#39;s arrival had unforeseen consequences, The radiation carried by the messengers can affect Earth’s mammals, forming 「Contactee」&quot;
+
+&quot;The Contactee individuals can infect other mammals, and the degree of influence decreases step by step until it is no longer contagious.&quot;
+
+&quot;Contactees have a dramatic increase in their physical capabilities and aggressiveness, Humans Contactees will lose their sense of self and begin to attack those around them indiscriminately. Some contactees even mutate new abilities, body parts, organs.&quot;
+
+&quot;The old world collapsed and the day became known as 「Arrival Day」&quot;
+
+&quot;What else do you want to hear?&quot;
+
+[[Maybe Regime and Starfall|regime and starfall]]
+[[Tell me about myself|lost memory]]
+[[That enough, thanks|witch-hunt]]
+
+&lt;&lt;set $FPandAD to true&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="regime and starfall" tags="" position="767,349" size="100,100">&lt;&lt;if $RandS is true&gt;&gt;&quot;You want to hear it again? Fine.&quot;
+&lt;&lt;/if&gt;&gt;
+&quot;After the collapse of our old world, a new order was gradually established.&quot;
+
+&quot;Since the first humans to meet the messengers were world leaders, most countries in the world have fallen into anarchy. Combined with the increasing size of the fallen areas, the space for human survival is constantly being squeezed.&quot;
+
+&quot;To avoid the deleterious effects of direct contact with humans. The Confederacy had difficulty intervening directly in the growing situation on Earth.&quot;
+
+&quot;They decided to send airdrop every six months on five continents, and the airdrop are called 「Starfall」 which contains science and technology that human beings have not yet reached.&quot;
+
+&quot;After acquiring Starfalls dropped by the Confederacy, humanity has some ability to fight back and gain technological development by reverse engineering the Starfall. New regimes were also established based on the continents, forming the Grand Continent State. It evolved into the Oceanic Union, the Eurasian Union, the East Asian Union and the African Union. Among them, the most unified and powerful is the African Union.&quot;
+
+&quot;The Unions coveted each other&#39;s Starfall, and there was constant friction at the borders. At the same time, individuals with special abilities are emerging among humans, people retain the ability to think after being exposed to the radiation are known as 「Starstealers」. Their ability is called 「Starlight」. They are treated differently according to the policies of their countries. Some are called into the army to perform special tasks, while others are regarded as enemies threatening rule. Some Starstealer who were suppressed also formed small societies, active in the underground of major cities.&quot;
+
+[[I want to hear about Friendship Program and Arrival day|friendship program and arrival day]]
+[[Tell me about myself|lost memory]]
+[[That enough, thanks|witch-hunt]]
+
+&lt;&lt;set $RandS to true&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="lost memory" tags="" position="962,361" size="100,100">&lt;&lt;if $LM is true&gt;&gt;&quot;Want to hear it again? Well...&quot;
+&lt;&lt;/if&gt;&gt;
+&quot;Our parents and I originally lived in New York, our father died in Advent, and after that we moved with the refugees until we settled in New Montreal.&quot;
+
+&quot;It was in New Montreal that you were born, $name. Our mother died in childbirth, you are the only family I left.&quot;
+
+&quot;Three years ago you were in an accident, a grenade exploded next to you, the shock wave caused a strong concussion, you were in a coma for three days, and when you woke up you lost your memory.&quot;
+
+[[I want to hear about Friendship Program and Arrival day|friendship program and arrival day]]
+[[Maybe Regime and Starfall|regime and starfall]]
+[[That enough, thanks|witch-hunt]]
+
+&lt;&lt;set $LM to true&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="witch-hunt" tags="" position="970,498" size="100,100">&quot;Maybe there&#39;ll be another dream tonight.&quot;
+You says to your brother with a smile.
+&quot;Who knows, but I hope there won&#39;t be any gore this time.&quot;
+Your brother laught and replies.
+
+You walk and observe the streetscape of New Montreal. New Montreal is populated mainly by refugees near the US-Canada border, affiliated with the Oceanic Union, and because of the New Montreal&#39;s geographical location not far from where the messenger arrived, it is a place where Starstealer and Normals coexist. A number of bullet holes, marks left by energy weapons and some indescribable scratches could be seen on the dirt walls and houses along the streets.
+
+Up ahead is the supply pickup point, a simple tent with security guards standing at the entrance keeping order and a few staff handing out supplies. You and your brother get in line.
+
+You see a man covered in armor at the front of the line. 
+&quot;Here.&quot;
+The staff member says to him coldly
+
+“I remember him. He’s the most conspicuous Starstealer around, they call him the Rhino.”
+Your brother notice him, too.
+
+&quot;Why should freaks like this have a share of our supplies, when hard-working humans are starving while the monsters get to eat!&quot; 
+The woman standing behind the Rhino speak deliberately and loudly.
+
+Rhino seemed to be used to being treated this way, and without a word, he turned and prepare to leave.
+
+&quot;She&#39;s talking to you, freak!&quot; A few young people start to insults him as well, and one of them kick the can on the ground onto Rhino&#39;s back.
+
+Rhino is getting restless as he glance at the crowd and muffle a grunt.
+
+People didn&#39;t leave him alone.
+“What was that look? Are you going to kill us? You Disgusting Monster!”
+
+
+The Rhino can’t help himself. 
+“Shut up!”
+
+&quot;Won&#39;t the guards and staff intervene?&quot; You look to your brother and ask.
+
+He seems to have got used to it.
+&quot;They don&#39;t even care.&quot;
+
+The woman wasn&#39;t ready to give up just yet as she turn to those around her and said 
+
+&quot;The mother of that freak must have been a bitch and cursed to give birth to such a thing.&quot;
+
+The crowd made a noise of hilarity. The Rhino suddenly burst into action, he ducked his head and charged at the crowd.
+
+In an instant, the young men who had just been chatting scattered into pieces, nearly four hundred kilograms of dead weight and a two-meter tall stature with hard armor can crush any obstacle directly in the path of the sprint
+
+Screams were heard all at once. The guards pull out their sidearms and begin firing. The small caliber bullets from the pistols could easily penetrate the flesh and blood, but only sparked against the Rhino&#39;s armor, unable to do any real damage to him.
+
+&quot;Can&#39;t you hear me, I told you to be quiet!&quot; The gunfire seemed to unsettle him even more as he slowly walk towards one of the guards, who emptied his magazines but can&#39;t slow Rhino&#39;s march. Rhino lift that guard and threw him at the other, the two men&#39;s torsos instantly twisted into shapes that no human body should be, sprawled out on the ground like broken kites.
+
+&quot;$name! Don&#39;t stand still!&quot; 
+Your brother shouts at you.
+
+You slide across the hood of a wrecked car on the street side and hide behind it.
+
+The Rhino look around as if searching for something.
+
+The woman who had mocked him at first fell limp on all fours to the ground.
+
+The Rhino gave a sardonic laugh 
+&quot;Found you.&quot; 
+
+With that he headed in the direction of the woman who begin to scream as she crawls on her hands and knees. 
+&quot;Help me!&quot;
+
+Rhino come up behind her and lift her up by her hair, holding her entire head in his large hand.
+
+[[stop it]]
+[[keep hiding]]</tw-passagedata><tw-passagedata pid="18" name="stop it" tags="" position="895,648" size="100,100">&quot;Don&#39;t!&quot;
+Your brother exclaim.
+
+Your sense of morality forced you to stop this. You speed up the sprint to try to ram Rhino, put your whole body weight on him but fail to let him move even a centimeter. Instead, you are jolted to the ground by the force of the return.
+
+&quot;Bad time to be a hero.&quot;
+Rhino extends his right hand and places it on your head, five fingers ready to force.
+
+&quot;Thud&quot;
+
+With a thud, the half of the signpost held in your brother&#39;s hand is twisted by the rhinoceros man&#39;s armor, again not harming him but drawing his attention and you take the opportunity to break free. With a casual swipe of his hand, your brother flies backwards shattering the window of the shop down the street.
+
+Anger rushes through you, and you jump up while his back is turned, grabbing his back and sliding your fingers through the opening at his eyes to snap his eyes.
+
+Something unexpected happens, a strong light flashes up and you [[enter another world|rhino&#39;s mind]]
 
 &lt;&lt;set $moral to $moral + 1&gt;&gt;
-别去！
-哥哥惊呼道
+&lt;&lt;set $BrotherSatisfaction to $BrotherSatisfaction - 1&gt;&gt;
+&lt;&lt;set $BrotherSatisfaction to $BrotherSatisfaction - 1&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="keep hiding" tags="" position="1045,648" size="100,100">&lt;&lt;set $moral to $moral - 1&gt;&gt;
+You don&#39;t move, after all, going head to head with him is tantamount to suicide.
 
-你顾不了那么多，你的道德感逼迫你阻止这件事的发生，你两步并作一步上前想要撞开那个犀牛人，你把全身的重量压到他的身上，却没让他移动哪怕一厘米。而你却被返回的作用力震倒在地。
+The woman&#39;s head is easily crushed. Rhino let go of his hand, looking around for other survivors. You lowered your head and prayed he&#39;d leave. 
 
-逞英雄的坏时机，他狞笑着，随即伸出自己的右手放在你的头上，五根手指准备用力。
+&quot;Sorry, can&#39;t let you leave.&quot;
+The Rhino says as he came around to you. He decided to make it quick, so he aimed for your neck. 
 
-嘭
+&quot;Thud&quot;
 
-一声闷响，哥哥手上举着的半截路标被犀牛人的装甲撞的扭曲，虽然同样没有伤害到他，却吸引了他的注意力，你趁机挣脱出来。他随手一挥，哥哥倒着飞了出去撞碎了街边商店的橱窗生死未卜。
+With a thud, the half of the signpost held in your brother&#39;s hand is twisted by the rhinoceros man&#39;s armor, again not harming him but drawing his attention and you take the opportunity to break free.
 
-愤怒涌上你的心头，你趁着他背对着你，跳起来抓住了他的背，把手指从他眼睛处的开口伸进去扣他的眼珠。
+You seize the opportunity and stick your finger through the only opening in his entire body that isn&#39;t protected by armor, at the eye.
 
-意想不到的事情发生了，一阵强光闪起，你进入了另一个世界。</tw-passagedata></tw-storydata>
+Something unexpected happens, a strong light flashes up and you [[enter another world|rhino&#39;s mind]]</tw-passagedata><tw-passagedata pid="20" name="rhino&#39;s mind" tags="flashback" position="968,800" size="100,100">You open your eyes and find yourself in a hospital room.
+
+&quot;Jack, are you okay?&quot;
+The lady lying in the nursing bed ask with concern.
+
+&quot;Jack? Is she talking about me?&quot;
+You think, but you can&#39;t say anything.
+
+&quot;I&#39;m fine, mom. I&#39;m just... I&#39;m a little tired.&quot;
+Jack reply to the lady.
+
+&lt;&lt;if $name is &quot;Jack&quot;&gt;&gt;&quot;He and I have the same name.&quot; 
+You think.
+
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $name is &quot;jack&quot;&gt;&gt;&quot;He and I have the same name.&quot; 
+You think.
+
+&lt;&lt;/if&gt;&gt;
+&quot;It doesn&#39;t matter. My illness is the same whether I come to the hospital or not. I don&#39;t want to be your dead weight.&quot;
+Jack&#39;s mom says.
+
+&quot;You can be cured. I just need more money.&quot;
+Jack says while clench his fist.
+
+Another flash of bright light and you suddenly find yourself in another place. You are surrounded by the crumbling city exterior, the buildings were covered in moss. You walking in the street with full body radiation protection suit.
+
+&quot;Jack, you&#39;ve been out in the field a little too much lately.&quot; 
+The voice on the radio says
+
+&quot;When you shut up, tell me how far I&#39;m from the target.&quot;
+Jack didn&#39;t appreciate it.
+
+&quot;Easy, I&#39;m trying to be friendly. You&#39;re less than 10 meters from the target.&quot;
+Says the other end of the radio.
+
+&quot;The information is wrong. There is no contactee here.&quot;
+Jack says anxious.
+&quot;Wait, no.&quot; 
+&quot;I&#39;m in a trapthis is not a mid-level at all..&quot;
+
+The monster on the wall have been waiting for the timing, Jack try to find cover but it is too late, the monster&#39;s tongue fly towards Jack&#39;s helmet and pierced the visor.
+
+Jack yank on that tongue and ripped the monster off the wall, holding his tongue while approaching, and shot the monster.
+
+Another flash of bright light.
+
+&quot;That&#39;s some thick bulletproof glass you got here.&quot;
+Jack commented self-deprecatingly.
+
+&quot;We&#39;ll evaluate you and you&#39;ll be back on the street in a week.&quot;
+The doctor said, 
+&quot;But I will warn you that your new image will make your life harder.&quot;
+
+Jack look into the mirror, his whole body is encased in armor and can no longer distinguish the person underneath.
+
+Another flash of bright light.
+
+&quot;I&#39;m very sorry, sir. Your mother has passed away.&quot;
+&quot;...&quot;
+Jack put down the phone and remain silent. Suddenly, he punch the wall of the observation room, leaving an imprint.
+
+&quot;This Rhino&#39;s memory, but how?&quot;
+You can&#39;t think of a reason.
+&quot;I got into his memory right after I insert my fingers into his sight holes on face armor. Is it because of physical contact?&quot;
+
+You don&#39;t have much time to think before another flash of bright light.
+
+[[back to reality]]
+
+&lt;audio src=&quot;https://github.com/thedavidweng/Interactive-Fiction-Starfall/blob/main/assets/audio/effects/TimeFlux%20-%20Time%20Enter%20-%20a%20SoundMorph%20design_01.wav?raw=true&quot; autoplay&gt;
+&lt;p&gt;If you are reading this, it is because your browser does not support the audio element.&lt;/p&gt;
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="21" name="back to reality" tags="" position="968,950" size="100,100">&quot;What did you do to me?&quot;
+The Rhino covers his eyes yelling at you.
+
+&quot;Stop it! Stop the senseless killing.&quot;
+You says.
+
+[[tell rhino the consequences]]
+[[talk to rhino about his family]]
+[[try to get close to rhino]]</tw-passagedata><tw-passagedata pid="22" name="tell rhino the consequences" tags="" position="800,1103" size="100,100">&lt;&lt;if $RepeattoRhino is true&gt;&gt;&quot;If you repeat what you said one more time, I&#39;ll rip your head off.&quot;
+&lt;&lt;/if&gt;&gt;
+Rhino seems to have lost his patience.
+&lt;&lt;if $RhinoSatisfaction is -1&gt;&gt;&quot;You make me sick.&quot;
+Rhino speke in an unhappy voice.
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;set $RhinoSatisfaction to $RhinoSatisfaction - 1&gt;&gt;
+&quot;You can&#39;t get away with it.&quot;
+You said.
+&quot;The police would be here soon.&quot;
+
+&quot;Do you think I care?&quot;
+The Rhino looks impatient.
+
+[[talk to rhino about his family]]
+[[try to get close to rhino]]
+[[tell rhino that ordinary people are innocent]]</tw-passagedata><tw-passagedata pid="23" name="talk to rhino about his family" tags="" position="982,1237" size="100,100">&lt;&lt;if $RepeattoRhino is true&gt;&gt;&quot;If you repeat what you said one more time, I&#39;ll rip your head off.&quot;
+&lt;&lt;/if&gt;&gt;
+Rhino seems to have lost his patience.
+&lt;&lt;if $RhinoSatisfaction is -1&gt;&gt;&quot;You make me sick.&quot;
+Rhino speke in an unhappy voice.
+&lt;&lt;/if&gt;&gt;
+
+&quot;What would your mother think if she saw you do something like that?&quot;
+You ask him.
+
+&quot;Don&#39;t you dare mention my mother.&quot;
+Rhino says.
+&quot;I don&#39;t know what gimmick you&#39;re using, but that&#39;s not gonna work.&quot;
+
+[[try to get close to rhino]]
+[[tell rhino that ordinary people are innocent]]
+
+&lt;&lt;set $RhinoSatisfaction to $RhinoSatisfaction - 1&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="try to get close to rhino" tags="" position="1143,1101" size="100,100">&lt;&lt;if $RepeattoRhino is true&gt;&gt;&quot;If you repeat what you said one more time, I&#39;ll rip your head off.&quot;
+&lt;&lt;/if&gt;&gt;
+Rhino seems to have lost his patience.
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;set $RhinoSatisfaction to $RhinoSatisfaction + 1&gt;&gt;
+&quot;Stop, Jack.&quot;
+You says.
+
+&quot;How the heck do you know my name.&quot;
+Jack is very confuse.
+
+&quot;I can&#39;t explain it. I just saw your memories, and I know a lot about you.&quot;
+You can’t explain it either.
+
+[[tell rhino the consequences]]
+[[talk to rhino about his family after get close]]</tw-passagedata><tw-passagedata pid="25" name="rhino-escapes" tags="" position="964,1465.5" size="100,100">&quot;You&#39;re right, I still have a life to live.&quot;
+He says.
+&quot;I won&#39;t regret killing these people, they all deserved it, but I won&#39;t kill another ordinary person.&quot;
+
+He dived into an alley, runing in the direction of leaving the city.
+
+&quot;Move Move Move!&quot;
+A group of heavily armed soldiers with weapons that are not the same era as the security guards quickly entered the scene.
+
+&quot;Target escaped.&quot;
+One of them was equipped differently from the others one pressed the radio button on her helmet and say, then walks straight towards you.
+
+She took off her helmet and says.
+&quot;Our recon drones saw you stalling. You&#39;re doing a good job.&quot;
+
+You notice the tag on her uniform: SSAA - Starstealer Security Assessment Alliance
+
+[[you guys are taking too long]]
+[[my brother is over there, call a medic]]</tw-passagedata><tw-passagedata pid="26" name="rhino-surrender" tags="" position="624,1466.5" size="100,100">&quot;You still have a chance. You can&#39;t make what just happened go away, but you still have a chance to atone for your crime.&quot;
+You says.
+
+&quot;You&#39;re right, my crime is too serious, I&#39;ve disgraced my mother. I&#39;ll turn myself in to the police.&quot;
+Rhino, or Jack, says.
+
+&quot;That&#39;s great, and I hope you get back into normal life soon.&quot;
+You let out a breath and says.
+
+&quot;There won&#39;t be any normalcy, from the moment I become like this.&quot;
+Jack says.
+
+Suddenly, the sound of energy cannon and energy assault rifle sounds, Jack&#39;s body was instantly riddled with holes.
+
+&quot;Move Move Move!&quot;
+A group of heavily armed soldiers with weapons that are not the same era as the security guards quickly entered the scene. They surrounded the body of the Rhino, start scanning his vitals.
+
+&quot;Target eliminated.&quot;
+One of them was equipped differently from the others one pressed the radio button on her helmet and say, then walks straight towards you.
+
+She took off her helmet and says.
+&quot;Our recon drones saw you stalling. You&#39;re doing a good job.&quot;
+
+You notice the tag on her uniform: SSAA - Starstealer Security Assessment Alliance
+
+[[I did what I had to do]]
+[[I thought he didn&#39;t have to die]]
+
+&lt;audio src=&quot;https://github.com/thedavidweng/Interactive-Fiction-Starfall/blob/main/assets/audio/effects/Future%20Weapons%20-%20Stun%20Ammo%2002.wav?raw=true&quot; autoplay&gt;
+&lt;p&gt;If you are reading this, it is because your browser does not support the audio element.&lt;/p&gt;
+&lt;/audio&gt;
+
+&lt;audio src=&quot;https://github.com/thedavidweng/Interactive-Fiction-Starfall/blob/main/assets/audio/effects/Future%20Weapons%20-%20Alliance-%20AssaultRifle_02-Burst%2001.wav?raw=true&quot; autoplay&gt;
+&lt;p&gt;If you are reading this, it is because your browser does not support the audio element.&lt;/p&gt;
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="27" name="rhino kills" tags="dead" position="566,1305.5" size="100,100">&quot;I&#39;ve had enough of you. You&#39;ll pay for what you&#39;ve said. No one will save you this time.&quot;
+The rhino says this while coming up and lift you.
+
+You try to stick your finger in his eye, but he&#39;s prepared this time and easily dodges it, and with a slight tug, your arm is dislocated.
+
+&quot;Reflect in hell on what you&#39;ve done wrong.&quot;
+
+You&#39;ve been torn to pieces.
+
+THE END</tw-passagedata><tw-passagedata pid="28" name="you guys are taking too long" tags="" position="886,1610.5" size="100,100">&quot;You guys are taking too long&quot;
+You say with discontent.
+
+&quot;What a shame. Are you okay?&quot;
+She respond with embarrassment.
+
+&quot;Can you make sure my brother&#39;s okay? He&#39;s in the store over there.&quot;
+You ask.
+
+&quot;Oh, so he&#39;s your brother. Don&#39;t worry, he is only slightly injured. He left through the back door of the store. He gave us directions.&quot;
+She answered with an expression of just realize.
+
+Your tense nerves are relaxed.
+
+THE END</tw-passagedata><tw-passagedata pid="29" name="talk to rhino about his family after get close" tags="" position="1166,1247" size="100,100">&lt;&lt;set $RhinoSatisfaction to $RhinoSatisfaction + 1&gt;&gt;
+&quot;Your mother loved you so much, she knew to the end of her life that Jack is a good boy.&quot;
+You looking at Jack and says.
+&quot;I know everything you&#39;ve done is to keep her alive, but the world is too cruel to you, to her&quot;
+
+[[tell rhino the family-related consequences]]</tw-passagedata><tw-passagedata pid="30" name="tell rhino the family-related consequences" tags="" position="1164,1401" size="100,100">&lt;&lt;set $RhinoSatisfaction to $RhinoSatisfaction + 1&gt;&gt;
+&quot;The last thing your mother wanted to see her Jack do was for him to be a sinner.&quot;
+You continue.
+
+[[ask Rhino to escapes|rhino-escapes]]
+&lt;&lt;if $RhinoSatisfaction is 3&gt;&gt;[[ask Rhino to surrender|rhino-surrender]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="tell rhino that ordinary people are innocent" tags="" position="767,1305" size="100,100">&quot;But those ordinary people who are unarmed and have no powers, those ordinary people you killed are innocent!&quot;
+You try to remind him of what he did.
+
+&quot;Heh, you are no different from them and only think from your own point of view, can&#39;t you hear what they say to me and the insults to my family? You&#39;re just their accomplice.&quot;
+Rhino says with disdain.
+
+[[ask Rhino to surrender|rhino kills]]
+[[ask Rhino to escapes|rhino kills]]</tw-passagedata><tw-passagedata pid="32" name="I did what I had to do" tags="" position="558,1617.5" size="100,100">&quot;Very good, do you want to consider joining us in the future?&quot;
+She smiled at you and says.
+
+You don&#39;t know what you&#39;re going to answer.
+
+&quot;Haha, I&#39;m kidding, but I really think you have a lot of potential.&quot;
+She noticed you don&#39;t know what to say.
+
+It occurs to you that you still don&#39;t know what happened to your brother.
+&quot;Can you make sure my brother&#39;s okay? He&#39;s in the store over there.&quot;
+
+&quot;Oh, so he&#39;s your brother. Don&#39;t worry, he is only slightly injured. He left through the back door of the store. He gave us directions.&quot;
+She says.
+
+Your tense nerves are relaxed.
+
+THE END</tw-passagedata><tw-passagedata pid="33" name="I thought he didn&#39;t have to die" tags="" position="714,1617.5" size="100,100">&quot;He killed people, according to our disposal regulations, he needs to be shot on sight.&quot;
+She says.
+
+It occurs to you that you still don&#39;t know what happened to your brother.
+&quot;Can you make sure my brother&#39;s okay? He&#39;s in the store over there.&quot;
+
+&quot;Oh, so he&#39;s your brother. Don&#39;t worry, he is only slightly injured. He left through the back door of the store. He gave us directions.&quot;
+She answered with an expression of just realize.
+
+Your tense nerves are relaxed.
+
+THE END</tw-passagedata><tw-passagedata pid="34" name="my brother is over there, call a medic" tags="" position="1108,1617.5" size="100,100">&quot;Can you make sure my brother&#39;s okay? He&#39;s in the store over there.&quot;
+
+&quot;Oh, so he&#39;s your brother. Don&#39;t worry, he is only slightly injured. He left through the back door of the store. He gave us directions.&quot;
+She answered with an expression of just realize.
+
+Your tense nerves are relaxed.
+
+THE END</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
 	if(document.documentElement.getAttribute("data-init")==="loading"){!function(window,document,jQuery,undefined){"use strict";function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,r=Array(e.length);t<e.length;t++)r[t]=e[t];return r}return Array.from(e)}var _createClass=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,r,n){return r&&e(t.prototype,r),n&&e(t,n),t}}(),_slicedToArray=function(){function e(e,t){var r=[],n=!0,a=!1,i=undefined;try{for(var o,s=e[Symbol.iterator]();!(n=(o=s.next()).done)&&(r.push(o.value),!t||r.length!==t);n=!0);}catch(e){a=!0,i=e}finally{try{!n&&s.return&&s.return()}finally{if(a)throw i}}return r}return function(t,r){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,r);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},errorPrologRegExp=/^(?:(?:uncaught\s+(?:exception:\s+)?)?\w*(?:error|exception|_err):\s+)+/i,Alert=function(){function e(e,t,r,n){var a="fatal"===e,i="Apologies! "+(a?"A fatal":"An")+" error has occurred.";i+=a?" Aborting.":" You may be able to continue, but some parts may not work properly.",null==t&&null==r||(i+="\n\nError",null!=t&&(i+=" ["+t+"]"),i+=null!=r?": "+r.replace(errorPrologRegExp,"")+".":": unknown error."),"object"===(void 0===n?"undefined":_typeof(n))&&null!==n&&n.stack&&(i+="\n\nStack Trace:\n"+n.stack),window.alert(i)}function t(t,r,n){e(null,t,r,n)}function r(t,r,n){e("fatal",t,r,n)}return function(e){window.onerror=function(n,a,i,o,s){"complete"===document.readyState?t(null,n,s):(r(null,n,s),window.onerror=e,"function"==typeof window.onerror&&window.onerror.apply(this,arguments))}}(window.onerror),Object.freeze(Object.defineProperties({},{error:{value:t},fatal:{value:r}}))}(),Patterns=function(){var e=function(){var e=new Map([[" ","\\u0020"],["\f","\\f"],["\n","\\n"],["\r","\\r"],["\t","\\t"],["\v","\\v"],[" ","\\u00a0"],[" ","\\u1680"],["᠎","\\u180e"],[" ","\\u2000"],[" ","\\u2001"],[" ","\\u2002"],[" ","\\u2003"],[" ","\\u2004"],[" ","\\u2005"],[" ","\\u2006"],[" ","\\u2007"],[" ","\\u2008"],[" ","\\u2009"],[" ","\\u200a"],["\u2028","\\u2028"],["\u2029","\\u2029"],[" ","\\u202f"],[" ","\\u205f"],["　","\\u3000"],["\ufeff","\\ufeff"]]),t=/^\s$/,r="";return e.forEach(function(e,n){t.test(n)||(r+=e)}),r?"[\\s"+r+"]":"\\s"}(),t="[\\u0020\\f\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u202f\\u205f\\u3000\\ufeff]",r="\\s"===e?"\\S":e.replace(/^\[/,"[^"),n="[0-9A-Z_a-z\\-\\u00c0-\\u00d6\\u00d8-\\u00f6\\u00f8-\\u00ff\\u0150\\u0170\\u0151\\u0171]",a=n.replace("\\-",""),i=function(){var e="(?:[\\x2D.0-9A-Z_a-z\\xB7\\xC0-\\xD6\\xD8-\\xF6\\xF8-\\u037D\\u037F-\\u1FFF\\u200C\\u200D\\u203F\\u2040\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFFD]|[\\uD800-\\uDB7F][\\uDC00-\\uDFFF])";return"[A-Za-z](?:"+e+"*-"+e+"*|[0-9A-Za-z]*)"}(),o=function(){return"("+n+"+)\\(([^\\)\\|\\n]+)\\):|"+t+"*("+n+"+)"+t+"*:([^;\\|\\n]+);|"+t+"*((?:[#.]"+n+"+"+t+"*)+);"}();return Object.freeze({space:e,spaceNoTerminator:t,lineTerminator:"[\\n\\r\\u2028\\u2029]",notSpace:r,anyChar:"(?:.|[\\n\\r\\u2028\\u2029])",anyLetter:n,anyLetterStrict:a,identifierFirstChar:"[$A-Z_a-z]",identifierNextChar:"[$0-9A-Z_a-z]",identifier:"[$A-Z_a-z][$0-9A-Z_a-z]*",variableSigil:"[$_]",variable:"[$_][$A-Z_a-z][$0-9A-Z_a-z]*",macroName:"[A-Za-z][\\w-]*|[=-]",templateName:"[A-Za-z][\\w-]*",htmlTagName:i,cssIdOrClassSigil:"[#.]",cssImage:"\\[[<>]?[Ii][Mm][Gg]\\[(?:\\s|\\S)*?\\]\\]+",inlineCss:o,url:"(?:file|https?|mailto|ftp|javascript|irc|news|data):[^\\s'\"]+"})}();!function(){function e(e,t){var r=Number.parseInt(e,10)||0;if(r<1)return"";var n=void 0===t?"":String(t);for(""===n&&(n=" ");n.length<r;){var a=n.length,i=r-a;n+=a>i?n.slice(0,i):n}return n.length>r&&(n=n.slice(0,r)),n}var t=function(){function e(e,n){var a=String(e);if(!a)return a;switch(n){case"start":return t.test(a)?a.replace(t,""):a;case"end":return r.test(a)?a.replace(r,""):a;default:throw new Error('_trimString called with incorrect where parameter value: "'+n+'"')}}var t=new RegExp("^"+Patterns.space+Patterns.space+"*"),r=new RegExp(""+Patterns.space+Patterns.space+"*$");return e}();Array.prototype.flat||Object.defineProperty(Array.prototype,"flat",{configurable:!0,writable:!0,value:function(){function e(){if(null==this)throw new TypeError("Array.prototype.flat called on null or undefined");var t=0===arguments.length?1:Number(arguments[0])||0;return t<1?Array.prototype.slice.call(this):Array.prototype.reduce.call(this,function(r,n){return n instanceof Array?r.push.apply(r,_toConsumableArray(e.call(n,t-1))):r.push(n),r},[])}return e}()}),Array.prototype.flatMap||Object.defineProperty(Array.prototype,"flatMap",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatMap called on null or undefined");return Array.prototype.map.apply(this,arguments).flat()}}),Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includes called on null or undefined");if(0===arguments.length)return!1;var e=this.length>>>0;if(0===e)return!1;var t=arguments[0],r=Number(arguments[1])||0;for(r<0&&(r=Math.max(0,e+r));r<e;++r){var n=this[r];if(n===t||n!==n&&t!==t)return!0}return!1}}),Object.entries||Object.defineProperty(Object,"entries",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.entries object parameter must be an object");return Object.keys(e).map(function(t){return[t,e[t]]})}}),Object.fromEntries||Object.defineProperty(Object,"fromEntries",{configurable:!0,writable:!0,value:function(e){return Array.from(e).reduce(function(e,t){if(Object(t)!==t)throw new TypeError("Object.fromEntries iterable parameter must yield objects");return t[0]in e?Object.defineProperty(e,t[0],{configurable:!0,enumerable:!0,writable:!0,value:t[1]}):e[t[0]]=t[1],e},{})}}),Object.getOwnPropertyDescriptors||Object.defineProperty(Object,"getOwnPropertyDescriptors",{configurable:!0,writable:!0,value:function(e){if(null==e)throw new TypeError("Object.getOwnPropertyDescriptors object parameter is null or undefined");var t=Object(e);return Reflect.ownKeys(t).reduce(function(e,r){var n=Object.getOwnPropertyDescriptor(t,r);return void 0!==n&&(r in e?Object.defineProperty(e,r,{configurable:!0,enumerable:!0,writable:!0,value:n}):e[r]=n),e},{})}}),Object.values||Object.defineProperty(Object,"values",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.values object parameter must be an object");return Object.keys(e).map(function(t){return e[t]})}}),String.prototype.padStart||Object.defineProperty(String.prototype,"padStart",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padStart called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:e(i-a,r)+n}}),String.prototype.padEnd||Object.defineProperty(String.prototype,"padEnd",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padEnd called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:n+e(i-a,r)}}),String.prototype.trimStart||Object.defineProperty(String.prototype,"trimStart",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimStart called on null or undefined");return t(this,"start")}}),String.prototype.trimLeft||Object.defineProperty(String.prototype,"trimLeft",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimLeft called on null or undefined");return t(this,"start")}}),String.prototype.trimEnd||Object.defineProperty(String.prototype,"trimEnd",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimEnd called on null or undefined");return t(this,"end")}}),String.prototype.trimRight||Object.defineProperty(String.prototype,"trimRight",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimRight called on null or undefined");return t(this,"end")}})}(),function(){function _random(){var e=void 0,t=void 0;switch(arguments.length){case 0:throw new Error("_random called with insufficient parameters");case 1:e=0,t=arguments[0];break;default:e=arguments[0],t=arguments[1]}if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.floor(_nativeMathRandom()*(t-e+1))+e}function _randomIndex(e,t){var r=void 0,n=void 0;switch(t.length){case 1:r=0,n=e-1;break;case 2:r=0,n=Math.trunc(t[1]);break;default:r=Math.trunc(t[1]),n=Math.trunc(t[2])}return Number.isNaN(r)?r=0:!Number.isFinite(r)||r>=e?r=e-1:r<0&&(r=e+r)<0&&(r=0),Number.isNaN(n)?n=0:!Number.isFinite(n)||n>=e?n=e-1:n<0&&(n=e+n)<0&&(n=e-1),_random(r,n)}function _getCodePointStartAndEnd(e,t){var r=e.charCodeAt(t);if(Number.isNaN(r))return{char:"",start:-1,end:-1};if(r<55296||r>57343)return{char:e.charAt(t),start:t,end:t};if(r>=55296&&r<=56319){var n=t+1;if(n>=e.length)throw new Error("high surrogate without trailing low surrogate");var a=e.charCodeAt(n);if(a<56320||a>57343)throw new Error("high surrogate without trailing low surrogate");return{char:e.charAt(t)+e.charAt(n),start:t,end:n}}if(0===t)throw new Error("low surrogate without leading high surrogate");var i=t-1,o=e.charCodeAt(i);if(o<55296||o>56319)throw new Error("low surrogate without leading high surrogate");return{char:e.charAt(i)+e.charAt(t),start:i,end:t}}var _nativeMathRandom=Math.random;Object.defineProperty(Array,"random",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e||!Object.prototype.hasOwnProperty.call(e,"length"))throw new TypeError("Array.random array parameter must be an array or array-lke object");var t=e.length>>>0;if(0!==t){return e[0===arguments.length?_random(0,t-1):_randomIndex(t,Array.prototype.slice.call(arguments,1))]}}}),Object.defineProperty(Array.prototype,"concatUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.concatUnique called on null or undefined");var e=Array.from(this);if(0===arguments.length)return e;var t=Array.prototype.reduce.call(arguments,function(e,t){return e.concat(t)},[]),r=t.length;if(0===r)return e;for(var n=Array.prototype.indexOf,a=Array.prototype.push,i=0;i<r;++i){var o=t[i];-1===n.call(e,o)&&a.call(e,o)}return e}}),Object.defineProperty(Array.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.count called on null or undefined");for(var e=Array.prototype.indexOf,t=arguments[0],r=Number(arguments[1])||0,n=0;-1!==(r=e.call(this,t,r));)++n,++r;return n}}),Object.defineProperty(Array.prototype,"delete",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.delete called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.concat.apply([],arguments),r=t.length,n=[],a=0;a<e;++a)for(var i=this[a],o=0;o<r;++o){var s=t[o];if(i===s||i!==i&&s!==s){n.push(a);break}}for(var u=[],l=0,c=n.length;l<c;++l)u[l]=this[n[l]];for(var d=Array.prototype.splice,f=n.length-1;f>=0;--f)d.call(this,n[f],1);return u}}),Object.defineProperty(Array.prototype,"deleteAt",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.deleteAt called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.splice,r=[].concat(_toConsumableArray(new Set(Array.prototype.concat.apply([],arguments).map(function(t){return t<0?Math.max(0,e+t):t})).values())),n=[].concat(_toConsumableArray(r)).sort(function(e,t){return t-e}),a=[],i=0,o=r.length;i<o;++i)a[i]=this[r[i]];for(var s=0,u=n.length;s<u;++s)t.call(this,n[s],1);return a}}),Object.defineProperty(Array.prototype,"deleteWith",{configurable:!0,writable:!0,value:function(e,t){if(null==this)throw new TypeError("Array.prototype.deleteWith called on null or undefined");if("function"!=typeof e)throw new Error("Array.prototype.deleteWith predicate parameter must be a function");var r=this.length>>>0;if(0===r)return[];for(var n=Array.prototype.splice,a=[],i=[],o=0;o<r;++o)e.call(t,this[o],o,this)&&(i.push(this[o]),a.push(o));for(var s=a.length-1;s>=0;--s)n.call(this,a[s],1);return i}}),Object.defineProperty(Array.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.first called on null or undefined");if(0!=this.length>>>0)return this[0]}}),Object.defineProperty(Array.prototype,"includesAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAll called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAll.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(!Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!1;return!0}}),Object.defineProperty(Array.prototype,"includesAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAny called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAny.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!0;return!1}}),Object.defineProperty(Array.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.last called on null or undefined");var e=this.length>>>0;if(0!==e)return this[e-1]}}),Object.defineProperty(Array.prototype,"pluck",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pluck called on null or undefined");var e=this.length>>>0;if(0!==e){var t=0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)));return Array.prototype.splice.call(this,t,1)[0]}}}),Object.defineProperty(Array.prototype,"pluckMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.pluckMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.pluckMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=Array.prototype.splice,a=[],i=t-1;do{a.push(n.call(this,_random(0,i--),1)[0])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"pushUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pushUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.push,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Array.prototype,"random",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.random called on null or undefined");var e=this.length>>>0;if(0!==e){return this[0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)))]}}}),Object.defineProperty(Array.prototype,"randomMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.randomMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.randomMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=new Map,a=[],i=t-1;do{var o=void 0;do{o=_random(0,i)}while(n.has(o));n.set(o,!0),a.push(this[o])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"shuffle",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.shuffle called on null or undefined");var e=this.length>>>0;if(0===e)return this;for(var t=e-1;t>0;--t){var r=Math.floor(_nativeMathRandom()*(t+1));if(t!==r){var n=this[t];this[t]=this[r],this[r]=n}}return this}}),Object.defineProperty(Array.prototype,"unshiftUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.unshiftUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.unshift,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Function.prototype,"partial",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Function.prototype.partial called on null or undefined");var e=Array.prototype.slice,t=this,r=e.call(arguments,0);return function(){for(var n=[],a=0,i=0;i<r.length;++i)n.push(r[i]===undefined?arguments[a++]:r[i]);return t.apply(this,n.concat(e.call(arguments,a)))}}}),Object.defineProperty(Math,"clamp",{configurable:!0,writable:!0,value:function(e,t,r){var n=Number(e);return Number.isNaN(n)?NaN:n.clamp(t,r)}}),Object.defineProperty(Math,"easeInOut",{configurable:!0,writable:!0,value:function(e){return 1-(Math.cos(Number(e)*Math.PI)+1)/2}}),Object.defineProperty(Number.prototype,"clamp",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Number.prototype.clamp called on null or undefined");if(2!==arguments.length)throw new Error("Number.prototype.clamp called with an incorrect number of parameters");var e=Number(arguments[0]),t=Number(arguments[1]);if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.min(Math.max(this,e),t)}}),RegExp.escape||function(){var e=/[\\^$*+?.()|[\]{}]/g,t=new RegExp(e.source);Object.defineProperty(RegExp,"escape",{configurable:!0,writable:!0,value:function(r){var n=String(r);return n&&t.test(n)?n.replace(e,"\\$&"):n}})}(),function(){var e=/{(\d+)(?:,([+-]?\d+))?}/g,t=new RegExp(e.source);Object.defineProperty(String,"format",{configurable:!0,writable:!0,value:function(r){function n(e,t,r){if(!t)return e;var n=Math.abs(t)-e.length;if(n<1)return e;var a=String(r).repeat(n);return t<0?e+a:a+e}if(arguments.length<2)return 0===arguments.length?"":r;var a=2===arguments.length&&Array.isArray(arguments[1])?[].concat(_toConsumableArray(arguments[1])):Array.prototype.slice.call(arguments,1);return 0===a.length?r:t.test(r)?(e.lastIndex=0,r.replace(e,function(e,t,r){var i=a[t];if(null==i)return"";for(;"function"==typeof i;)i=i();switch(void 0===i?"undefined":_typeof(i)){case"string":break;case"object":i=JSON.stringify(i);break;default:i=String(i)}return n(i,r?Number.parseInt(r,10):0," ")})):r}})}(),Object.defineProperty(String.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.contains called on null or undefined");return-1!==String.prototype.indexOf.apply(this,arguments)}}),Object.defineProperty(String.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.count called on null or undefined");var e=String(arguments[0]||"");if(""===e)return 0;for(var t=String.prototype.indexOf,r=e.length,n=Number(arguments[1])||0,a=0;-1!==(n=t.call(this,e,n));)++a,n+=r;return a}}),Object.defineProperty(String.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.first called on null or undefined");return _getCodePointStartAndEnd(String(this),0).char}}),Object.defineProperty(String.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.last called on null or undefined");var e=String(this);return _getCodePointStartAndEnd(e,e.length-1).char}}),Object.defineProperty(String.prototype,"splice",{configurable:!0,writable:!0,value:function(e,t,r){if(null==this)throw new TypeError("String.prototype.splice called on null or undefined");var n=this.length>>>0;if(0===n)return"";var a=Number(e);Number.isSafeInteger(a)?a<0&&(a+=n)<0&&(a=0):a=0,a>n&&(a=n);var i=Number(t);(!Number.isSafeInteger(i)||i<0)&&(i=0);var o=this.slice(0,a);return void 0!==r&&(o+=r),a+i<n&&(o+=this.slice(a+i)),o}}),Object.defineProperty(String.prototype,"splitOrEmpty",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.splitOrEmpty called on null or undefined");return""===String(this)?[]:String.prototype.split.apply(this,arguments)}}),Object.defineProperty(String.prototype,"toLocaleUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toLocaleUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toLocaleUpperCase()+e.slice(n+1)}}),Object.defineProperty(String.prototype,"toUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toUpperCase()+e.slice(n+1)}}),Object.defineProperty(Date.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:date)",this.toISOString()]}}),Object.defineProperty(Function.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)","("+this.toString()+")"]}}),Object.defineProperty(Map.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:map)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(RegExp.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)",this.toString()]}}),Object.defineProperty(Set.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:set)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(JSON,"reviveWrapper",{configurable:!0,writable:!0,value:function(e,t){if("string"!=typeof e)throw new TypeError("JSON.reviveWrapper code parameter must be a string");return["(revive:eval)",[e,t]]}}),Object.defineProperty(JSON,"_real_stringify",{value:JSON.stringify}),Object.defineProperty(JSON,"stringify",{configurable:!0,writable:!0,value:function(e,t,r){return JSON._real_stringify(e,function(e,r){var n=r;if("function"==typeof t)try{n=t(e,n)}catch(e){}return void 0===n&&(n=["(revive:eval)","undefined"]),n},r)}}),Object.defineProperty(JSON,"_real_parse",{value:JSON.parse}),Object.defineProperty(JSON,"parse",{configurable:!0,writable:!0,value:function value(text,reviver){return JSON._real_parse(text,function(key,val){var value=val;if(Array.isArray(value)&&2===value.length)switch(value[0]){case"(revive:set)":value=new Set(value[1]);break;case"(revive:map)":value=new Map(value[1]);break;case"(revive:date)":value=new Date(value[1]);break;case"(revive:eval)":try{if(Array.isArray(value[1])){var $ReviveData$=value[1][1];value=eval(value[1][0])}else value=eval(value[1])}catch(e){}}else if("string"==typeof value&&"@@revive@@"===value.slice(0,10))try{value=eval(value.slice(10))}catch(e){}if("function"==typeof reviver)try{value=reviver(key,value)}catch(e){}return value})}}),Object.defineProperty(Array.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.contains called on null or undefined");return Array.prototype.includes.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAll called on null or undefined");return Array.prototype.includesAll.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAny called on null or undefined");return Array.prototype.includesAny.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"flatten",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatten called on null or undefined");return Array.prototype.flat.call(this,1/0)}}),Object.defineProperty(String.prototype,"readBracketedList",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.readBracketedList called on null or undefined");for(var e=new RegExp("(?:\\[\\[((?:\\s|\\S)*?)\\]\\])|([^\"'\\s]\\S*)","gm"),t=[],r=void 0;null!==(r=e.exec(this));)r[1]?t.push(r[1]):r[2]&&t.push(r[2]);return t}})}();var Browser=function(){var e=navigator.userAgent.toLowerCase(),t=e.includes("windows phone"),r=Object.freeze({Android:!t&&e.includes("android"),BlackBerry:/blackberry|bb10/.test(e),iOS:!t&&/ip(?:hone|ad|od)/.test(e),Opera:!t&&("object"===_typeof(window.operamini)||e.includes("opera mini")),Windows:t||/iemobile|wpdesktop/.test(e),any:function(){return r.Android||r.BlackBerry||r.iOS||r.Opera||r.Windows}}),n=!r.Windows&&!/khtml|trident|edge/.test(e)&&e.includes("gecko"),a=!e.includes("opera")&&/msie|trident/.test(e),i=a?function(){var t=/(?:msie\s+|rv:)(\d+\.\d)/.exec(e);return t?Number(t[1]):0}():null,o=e.includes("opera")||e.includes(" opr/"),s=o?function(){var t=new RegExp((/khtml|chrome/.test(e)?"opr":"version")+"\\/(\\d+\\.\\d+)"),r=t.exec(e);return r?Number(r[1]):0}():null,u=e.includes("vivaldi");return Object.freeze({userAgent:e,isMobile:r,isGecko:n,isIE:a,ieVersion:i,isOpera:o,operaVersion:s,isVivaldi:u})}(),Has=function(){var e=function(){try{return"function"==typeof document.createElement("audio").canPlayType}catch(e){}return!1}(),t=function(){try{return"Blob"in window&&"File"in window&&"FileList"in window&&"FileReader"in window&&(!Browser.isOpera||Browser.operaVersion>=15)}catch(e){}return!1}(),r=function(){try{return"geolocation"in navigator&&"function"==typeof navigator.geolocation.getCurrentPosition&&"function"==typeof navigator.geolocation.watchPosition}catch(e){}return!1}(),n=function(){try{return"MutationObserver"in window&&"function"==typeof window.MutationObserver}catch(e){}return!1}(),a=function(){try{return"performance"in window&&"function"==typeof window.performance.now}catch(e){}return!1}(),i=function(){try{return"ontouchstart"in window||!!window.DocumentTouch&&document instanceof window.DocumentTouch||!!navigator.maxTouchPoints||!!navigator.msMaxTouchPoints}catch(e){}return!1}(),o=function(){try{for(var e=new Map([["transition","transitionend"],["MSTransition","msTransitionEnd"],["WebkitTransition","webkitTransitionEnd"],["MozTransition","transitionend"]]),t=[].concat(_toConsumableArray(e.keys())),r=document.createElement("div"),n=0;n<t.length;++n)if(r.style[t[n]]!==undefined)return e.get(t[n])}catch(e){}return!1}();return Object.freeze({audio:e,fileAPI:t,geolocation:r,mutationObserver:n,performance:a,touch:i,transitionEndEvent:o})}(),Visibility=function(){function e(){return a}function t(){return a&&document[a.stateProperty]||"visible"}function r(){return Boolean(a)}function n(){return Boolean(a&&document[a.hiddenProperty])}var a=function(){try{return Object.freeze([{hiddenProperty:"hidden",stateProperty:"visibilityState",changeEvent:"visibilitychange"},{hiddenProperty:"webkitHidden",stateProperty:"webkitVisibilityState",changeEvent:"webkitvisibilitychange"},{hiddenProperty:"mozHidden",stateProperty:"mozVisibilityState",changeEvent:"mozvisibilitychange"},{hiddenProperty:"msHidden",stateProperty:"msVisibilityState",changeEvent:"msvisibilitychange"}].find(function(e){return e.hiddenProperty in document}))}catch(e){}return undefined}();return Object.freeze(Object.defineProperties({},{vendor:{get:e},state:{get:t},isEnabled:{value:r},isHidden:{value:n},hiddenProperty:{value:a&&a.hiddenProperty},stateProperty:{value:a&&a.stateProperty},changeEvent:{value:a&&a.changeEvent}}))}(),Fullscreen=function(){function e(e){var t=e||document.documentElement;return t===document.documentElement&&("msRequestFullscreen"===f.requestFn||Browser.isOpera&&Browser.operaVersion<15)&&(t=document.body),t}function t(){return f}function r(){return(f||null)&&document[f.element]}function n(){return Boolean(f&&document[f.isEnabled])}function a(){return Boolean(f&&document[f.element])}function i(t,r){var n=this;if(!f)return Promise.reject(new Error("fullscreen not supported"));var i=e(r);if("function"!=typeof i[f.requestFn])return Promise.reject(new Error("fullscreen not supported"));if(a())return Promise.resolve();if(p())return i[f.requestFn](t);var o=".Fullscreen_requestFullscreen";return new Promise(function(e,r){jQuery(i).off(o).one(""+f.errorEvent+o+" "+f.changeEvent+o,function(t){jQuery(n).off(o),t.type===f.errorEvent?r(new Error("unknown fullscreen request error")):e()}),i[f.requestFn](t)})}function o(){var e=this;if(!f||"function"!=typeof document[f.exitFn])return Promise.reject(new TypeError("fullscreen not supported"));if(!a())return Promise.reject(new TypeError("fullscreen mode not active"));if(p())return document[f.exitFn]();var t=".Fullscreen_exitFullscreen";return new Promise(function(r,n){jQuery(document).off(t).one(""+f.errorEvent+t+" "+f.changeEvent+t,function(a){jQuery(e).off(t),a.type===f.errorEvent?n(new Error("unknown fullscreen exit error")):r()}),document[f.exitFn]()})}function s(e,t){return a()?o():i(e,t)}function u(t,r){if(f){var n=e(r);$(n).on(f.changeEvent,t)}}function l(t,r){if(f){var n=e(r);t?$(n).off(f.changeEvent,t):$(n).off(f.changeEvent)}}function c(t,r){if(f){var n=e(r);$(n).on(f.errorEvent,t)}}function d(t,r){if(f){var n=e(r);t?$(n).off(f.errorEvent,t):$(n).off(f.errorEvent)}}var f=function(){try{return Object.freeze([{isEnabled:"fullscreenEnabled",element:"fullscreenElement",requestFn:"requestFullscreen",exitFn:"exitFullscreen",changeEvent:"fullscreenchange",errorEvent:"fullscreenerror"},{isEnabled:"webkitFullscreenEnabled",element:"webkitFullscreenElement",requestFn:"webkitRequestFullscreen",exitFn:"webkitExitFullscreen",changeEvent:"webkitfullscreenchange",errorEvent:"webkitfullscreenerror"},{isEnabled:"mozFullScreenEnabled",element:"mozFullScreenElement",requestFn:"mozRequestFullScreen",exitFn:"mozCancelFullScreen",changeEvent:"mozfullscreenchange",errorEvent:"mozfullscreenerror"},{isEnabled:"msFullscreenEnabled",element:"msFullscreenElement",requestFn:"msRequestFullscreen",exitFn:"msExitFullscreen",changeEvent:"MSFullscreenChange",errorEvent:"MSFullscreenError"}].find(function(e){return e.isEnabled in document}))}catch(e){}return undefined}(),p=function(){function e(){if(null!==t)return t;if(t=!1,f)try{var e=document.exitFullscreen();e.catch(function(){}),t=e instanceof Promise}catch(e){}return t}var t=null;return e}();return Object.freeze(Object.defineProperties({},{vendor:{get:t},element:{get:r},isEnabled:{value:n},isFullscreen:{value:a},request:{value:i},exit:{value:o},toggle:{value:s},onChange:{value:u},offChange:{value:l},onError:{value:c},offError:{value:d}}))}(),_ref3=function(){function e(e){for(var t=e.cloneNode(!0),r=document.createDocumentFragment(),n=void 0;null!==(n=t.firstChild);){if(n.nodeType===Node.ELEMENT_NODE)switch(n.nodeName.toUpperCase()){case"BR":case"DIV":case"P":r.appendChild(document.createTextNode(" "))}r.appendChild(n)}return r.textContent}function t(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)return e;if(e instanceof String)return String(e);if(e instanceof Number)return Number(e);if(e instanceof Boolean)return Boolean(e)
